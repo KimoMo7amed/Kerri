@@ -1,0 +1,313 @@
+
+
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+
+
+:root{
+
+    --primarycolor :#e77584;
+}
+
+.navbar .active{
+
+    color:var(--primarycolor) !important;
+}
+ul li {
+
+    margin: 0 15px;
+}
+ul li a{
+
+    transition: .5s all;
+}
+
+ul li a:hover{
+
+    color: #e77584 !important;
+}
+.home
+{
+
+   background-image:linear-gradient(rgba(0, 0, 0, 0.6) , rgba(0, 0, 0, 0.6)) ,url('../images/header-bg.jpg');
+   
+   background-size: cover;
+   background-attachment: fixed;
+}
+
+
+
+.content h2{
+
+    font-size: 3.5rem;
+    font-weight: normal;
+    margin: 20px 0;
+    color: white;
+}
+
+.content h2::after {
+    content: " ";
+    border-right: 2px solid #ffffff9c;
+    padding-right: 5px;
+    font-weight: 400;
+    animation: typing 6s alternate infinite;
+  }
+  
+  /* 100-(11*3)=67 / 3 = 22.33333 / 2 = 11.16666
+  
+  Larry Daniels = 12
+  11.16666/12 = 0.93
+  
+  Developer = 9
+  11.16666/9= 1.24
+  
+  Designer = 8
+  11.16666/8= 1.39
+  */
+  
+  @keyframes typing {
+    0% {content:"|"}
+    0.93% {content:"D"}
+    1.86% {content:"De"}
+    2.79% {content:"Dev"}
+    3.72% {content:"Devo"}
+    4.65% {content:"Devol"}
+    5.58% {content:"Devolo"}
+    6.51% {content:"Devolop"}
+    7.44% {content:"Devolopm"}
+    8.37% {content:"Devolopme"}
+    9.3% {content:"Devolopmen"}
+    10.23% {content:"Devolopment"}
+    11.16% {content:"Devolopment"}
+    22.16% {content:"Devolopmen"}
+    23.09% {content:"Devolopme"}
+    24.02% {content:"Devolopm"}
+    24.95% {content:"Devolop"}
+    25.88% {content:"Devolo"}
+    26.81% {content:"Devol"}
+    27.74% {content:"Devo"}
+    28.67% {content:"Dev"}
+    29.6% {content:"De"}
+    30.53% {content:"D"}
+    31.46% {content:""}
+    33.94% {content:""}
+    35.18% {content:"D"}
+    36.42% {content:"De"}
+    37.66% {content:"Dev"}
+    38.9% {content:"Deve"}
+    40.14% {content:"Devel"}
+    41.38% {content:"Develo"}
+    42.62% {content:"Develop"}
+    43.86% {content:"Develope"}
+    45.1% {content:"Developer"}
+    56.1% {content:"Developer"}
+    57.34% {content:"Develope"}
+    58.58% {content:"Develop"}
+    59.82% {content:"Develo"}
+    61.06% {content:"Devel"}
+    62.3% {content:"Deve"}
+    63.54% {content:"Dev"}
+    64.78% {content:"De"}
+    66.02% {content:"D"}
+    67.26% {content:""}
+    68.65% {content:"D"}
+    70.04% {content:"De"}
+    71.43% {content:"Des"}
+    72.82% {content:"Desi"}
+    74.21% {content:"Desig"}
+    75.6% {content:"Design"}
+    76.99% {content:"Designe"}
+    78.38% {content:"Designer"}
+    89.38% {content:"Designer"}
+    90.77% {content:"Designe"}
+    92.16% {content:"Design"}
+    93.55% {content:"Desig"}
+    94.94% {content:"Desi"}
+    96.33% {content:"Des"}
+    97.72% {content:"De"}
+    99.11% {content:"D"}
+    100% {content:""}
+  }
+
+.btn
+{
+
+    border:2px solid white;
+    border-radius: 20px;
+    padding: 10px 20px;
+    transition: .6s linear;
+    margin-top: 20px;
+    color: white !important;
+}
+
+.btn:hover{
+
+    background-color: white;
+    color:black !important;
+}
+
+.setting{
+
+    top: 30%;
+    background-color: rgb(51, 51,51);
+    width: 40px;
+    height: 40px;
+    border-radius: 0 10px 10px 0;
+}
+
+
+/* end home */
+
+.about h3 span{
+
+color: #e77584;
+
+}
+
+.about .icon i{
+
+    font-size: 1.2rem;
+    margin-left:20px;
+    border: 2px solid #ccc;
+    padding: 10px;
+    border-radius: 50%;
+    transition: .5s all;
+    cursor: pointer;
+
+}
+
+.about .icon i:hover{
+
+    color: #e77584;
+    border: 2px solid var(--primarycolor);
+}
+
+
+/* end about */
+
+.title span{
+
+    color: var(--primarycolor);
+}
+
+.slider i{
+
+    color: #e77584;
+}
+
+.slider .name{
+
+    color: var(--primarycolor);
+}
+
+.carousel-indicators button{
+
+    background-color: var(--primarycolor) !important;
+    height: 6px !important;
+    border-radius: 10px;
+    position: relative !important;
+    top: 50px !important;
+    
+}
+
+
+/* End Client */
+
+
+
+
+.work .layer{
+
+    position:absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.6) ;
+    opacity:0;
+    transition: .5s linear;
+}
+
+
+.work .img .Image-work{
+
+transition: .6s linear;
+}
+
+.work .img:hover .Image-work{
+
+    scale: 1.2;
+}
+
+.work .img:hover .layer{
+
+    opacity: 1;
+}
+
+
+
+.work .icon i{
+
+   
+    background-color: black;
+    color: white;
+     padding: 10px;
+     margin: 5px;
+    border-radius: 50%;
+    transition: .6s all;
+    cursor: pointer;
+ 
+}
+
+.work .icon i:hover{
+
+    background-color: white;
+    color: black;
+
+}
+
+
+.work ul li button{
+
+    color: black !important;
+}
+
+.work ul li .active {
+
+background-color: var(--primarycolor) !important;
+color: white !important;
+
+
+}
+
+
+
+
+/* End Work */
+
+
+.blog .content span{
+
+    color: var(--primarycolor);
+}
+
+
+/* End Blog */
+
+
+/* Start Contact */
+
+.contact i{
+
+color: var(--primarycolor);
+}
+
+.contact button{
+
+    position: absolute;
+    right: 100px;
+}
